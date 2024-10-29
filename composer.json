@@ -10,13 +10,16 @@
     "require": {
         "php": "^8.2",
         "bezhansalleh/filament-shield": "^3.2",
+        "coolsam/modules": "^4.0",
         "cypresslab/gitelephant": "^4.5",
         "filament/filament": "^3.2",
         "graham-campbell/gitlab": "^7.5",
+        "husam-tariq/filament-database-schedule": "^2.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
         "livewire/volt": "^1.0",
+        "nwidart/laravel-modules": "^11.1",
         "spatie/ssh": "^1.11",
         "symfony/filesystem": "^7.1",
         "symfony/yaml": "^7.1",
@@ -59,7 +62,8 @@
             "ergebnis/composer-normalize": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "wikimedia/composer-merge-plugin": true
         },
         "optimize-autoloader": true,
         "preferred-install": "dist",
@@ -68,6 +72,11 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "merge-plugin": {
+            "include": [
+                "modules/*/composer.json"
+            ]
         }
     },
     "scripts": {

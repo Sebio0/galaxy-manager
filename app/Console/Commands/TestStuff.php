@@ -2,10 +2,8 @@
 
 namespace App\Console\Commands;
 
-use AnourValar\EloquentSerialize\Service;
-use App\Docker\ComposeBuilder;
-use App\Docker\ServiceBuilder;
-use App\Service\DockerService;
+use app\Docker\ComposeBuilder;
+use app\Docker\ServiceBuilder;
 use Illuminate\Console\Command;
 use Symfony\Component\Yaml\Yaml;
 
